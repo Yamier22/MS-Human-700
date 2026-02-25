@@ -31,7 +31,7 @@ Full body human musculoskeletal model with simplified hands and torso, for compl
 *   **Muscles:** 700 actuators
 
 <div align="center">
-  <img src="pictures/loco_full_gif.gif" width="60%">
+  <img src="Pictures/loco_full_gif.gif" width="60%">
 </div>
 
 ### Legs Locomotion Model
@@ -45,7 +45,7 @@ Focusing on lower-body dynamics. This model isolates the legs for locomotion res
 *   **Muscles:** 100
 
 <div align="center">
-    <img src="pictures/loco_legs_gif.gif" width="60%">
+    <img src="Pictures/loco_legs_gif.gif" width="60%">
 </div>
 
 ### Unimanual Manipulation Model
@@ -59,5 +59,5 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
 *   **Muscles:** 81
 
 <div align="center">
-    <img src="pictures/mani_gif.gif" width="60%">
+    <img src="Pictures/mani_gif.gif" width="60%">
 </div>
