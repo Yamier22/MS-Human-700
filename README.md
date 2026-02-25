@@ -6,8 +6,8 @@
 
 
 <div align="center">
-  <img src="pictures/ms_human_render_front.png" width="40%">
-  <img src="pictures/render_gif.gif" width="40%">
+  <img src="Pictures/ms_human_render_front.png" width="40%">
+  <img src="Pictures/render_gif.gif" width="40%">
 </div>
 
 ## Overview
