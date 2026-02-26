@@ -72,3 +72,30 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
   <img src="Pictures/run_gif.gif" width="49%">
   <img src="Pictures/dance_gif.gif" width="49%">
 </div>
+
+High-Fidelity Motion Tracking (in development) results: 
+
+Leveraging MuJoCo Warp for massively parallel GPU simulation enables the rapid and efficient training of control policies capable of high-precision motion tracking across diverse and dynamic trajectories.
+
+The demos below illustrate these tracking capabilities of the MS-Human model:
+*   **Overlap**: The model and reference trajectory are rendered directly to visualize tracking accuracy.
+*   **Separate**: The model and reference trajectory are rendered with an offset to showcase motion details.
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <video src="https://github.com/user-attachments/assets/32d4a4a9-6834-4f37-9df1-ebf7b6af0753" width="100%" controls autoplay loop muted></video>
+    </td>
+    <td align="center" width="25%">
+      <video src="https://github.com/user-attachments/assets/d0961f7a-18c5-49a6-bb24-09b6da265a19" width="100%" controls autoplay loop muted></video>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <video src="https://github.com/user-attachments/assets/2d0fa676-dea5-4eb5-9397-8bbf9f452ff9" width="100%" controls autoplay loop muted></video>
+    </td>
+    <td align="center" width="25%">
+      <video src="https://github.com/user-attachments/assets/28e6b539-9763-4cb0-8093-b91c8ac9327c" width="100%" controls autoplay loop muted></video>
+    </td>
+  </tr>
+</table>
