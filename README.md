@@ -1,8 +1,8 @@
 # MS-Human-700: Whole-body Human Musculoskeletal Model
 
-**Self model for embodied intelligence: Modeling full-body human musculoskeletal system and locomotion control with hierarchical low-dimensional representation (ICRA 2024)**
-
-[**Project Page**](https://lnsgroup.cc/research/MS-Human) | [**Reinforcement Learning Environments (msgym)**](https://github.com/LNSGroup/msgym)
+<p align="center">
+  <a href="https://lnsgroup.cc/research/MS-Human">Project page</a> | <a href="https://github.com/LNSGroup/msgym">Reinforcement Learning Environments (msgym)</a>
+</p>
 
 
 <div align="center">
@@ -12,9 +12,15 @@
 
 ## Overview
 
-This directory contains the **MuJoCo XML** and asset files for the **MS-Human-700** model. 
+This directory contains the **MuJoCo XML** and asset files for the **MS-Human-700** model.
 
-This model features a comprehensive musculoskeletal system ideal for embodied intelligence research. For reinforcement learning environments and training scripts, please refer to the **[msgym](https://github.com/LNSGroup/msgym)** repository.
+Related papers:
+- [MS-Human-700 (ICRA 2024)](https://arxiv.org/abs/2312.05473)
+- [DynSyn (ICML 2024)](https://arxiv.org/abs/2407.11472)
+- [MPC2 (ICLR 2025)](https://arxiv.org/abs/2505.08238)
+- [QFlex (ICLR 2026)](https://arxiv.org/abs/2601.19707)
+
+For reinforcement learning environments and training scripts, see [msgym](https://github.com/LNSGroup/msgym).
 
 To visualize the models, drag-and-drop the `MS-Human-700-*.xml` files into MuJoCo's `simulate` viewer.
 
@@ -24,15 +30,11 @@ To visualize the models, drag-and-drop the `MS-Human-700-*.xml` files into MuJoC
 
 **File:** `MS-Human-700.xml`
 
-Full body human musculoskeletal model with simplified hands and torso, for complex whole-body locomotion tasks.
+Full body human musculoskeletal model for whole-body locomotion tasks.
 
-*   **Bodies:** 90 (Optimized to **80**)
-*   **Joints:** 206 (Constained to **85** for control stability)
-*   **Muscles:** 700 actuators
-
-<div align="center">
-  <img src="Pictures/loco_full_gif.gif" width="60%">
-</div>
+* **Bodies:** 90 (optimized to **80**)
+* **Joints:** 206 (constrained to **85** for control stability)
+* **Muscles:** 700 actuators
 
 ### Legs Locomotion Model
 
@@ -40,13 +42,9 @@ Full body human musculoskeletal model with simplified hands and torso, for compl
 
 Focusing on lower-body dynamics. This model isolates the legs for locomotion research while simplifying the upper limbs and torso.
 
-*   **Bodies:** 80
-*   **Joints:** 36
-*   **Muscles:** 100
-
-<div align="center">
-    <img src="Pictures/loco_legs_gif.gif" width="60%">
-</div>
+* **Bodies:** 80
+* **Joints:** 36
+* **Muscles:** 100
 
 ### Unimanual Manipulation Model
 
@@ -54,10 +52,23 @@ Focusing on lower-body dynamics. This model isolates the legs for locomotion res
 
 Focusing on right arm and detailed right hand, designed for manipulation tasks.
 
-*   **Bodies:** 127
-*   **Joints:** 42
-*   **Muscles:** 81
+* **Bodies:** 127
+* **Joints:** 42
+* **Muscles:** 81
+
+## Control Demo
+
+[DynSyn](https://github.com/Beanpow/DynSyn) control results:
 
 <div align="center">
-    <img src="Pictures/mani_gif.gif" width="60%">
+  <img src="Pictures/loco_full_gif.gif" width="32%">
+  <img src="Pictures/loco_legs_gif.gif" width="32%">
+  <img src="Pictures/mani_gif.gif" width="32%">
+</div>
+
+[QFlex](https://lnsgroup.cc/research/Qflex) control results:
+
+<div align="center">
+  <img src="Pictures/run_gif.gif" width="49%">
+  <img src="Pictures/dance_gif.gif" width="49%">
 </div>
