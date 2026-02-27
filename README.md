@@ -1,7 +1,7 @@
 # MS-Human-700: Whole-body Human Musculoskeletal Model
 
 <p align="center">
-  <a href="https://lnsgroup.cc/research/MS-Human">Project page</a> | <a href="https://github.com/LNSGroup/msgym">Reinforcement Learning Environments (msgym)</a>
+  <a href="https://lnsgroup.cc/research/MS-Human">Project Page</a> | <a href="https://github.com/LNSGroup/msgym">Reinforcement Learning Environments (msgym)</a>
 </p>
 
 
@@ -57,7 +57,7 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
 * **Joints:** 42
 * **Muscles:** 81
 
-## Control Demo
+## Control Demos
 
 [**DynSyn**](https://github.com/Beanpow/DynSyn) control results:
 
@@ -66,6 +66,7 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
   <img src="Pictures/loco_legs_gif.gif" width="32%">
   <img src="Pictures/mani_gif.gif" width="32%">
 </div>
+<br><br>
 
 [**QFlex**](https://lnsgroup.cc/research/Qflex) control results:
 
@@ -73,10 +74,11 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
   <img src="Pictures/run_gif.gif" width="49%">
   <img src="Pictures/dance_gif.gif" width="49%">
 </div>
+<br><br>
 
 **High-Fidelity Motion Tracking** results: 
 
-Leveraging MuJoCo Warp for massively parallel GPU simulation enables the rapid and efficient training of control policies capable of high-precision motion tracking across diverse and dynamic trajectories.
+Leveraging MuJoCo Warp for massively parallel **GPU** simulation enables the rapid and efficient training of control policies capable of high-precision motion tracking across diverse and dynamic trajectories.
 
 The demos below illustrate these tracking capabilities of the MS-Human model:
 *   **Overlap**: The model and reference trajectory are rendered directly to visualize tracking accuracy.
