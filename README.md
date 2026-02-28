@@ -59,7 +59,7 @@ Focusing on right arm and detailed right hand, designed for manipulation tasks.
 
 ## Control Demos
 
-[**DynSyn**](https://github.com/Beanpow/DynSyn) control results:
+[**DynSyn**](https://lnsgroup.cc/research/DynSyn) control results:
 
 <div align="center">
   <img src="Pictures/loco_full_gif.gif" width="32%">
