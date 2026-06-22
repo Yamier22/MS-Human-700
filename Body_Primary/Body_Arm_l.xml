@@ -593,6 +593,7 @@
                         <site name="APL_l-P8" pos="0.02878 -0.00674 0.0187" />
                         <site name="APL_l-P9" pos="0.03076 -0.01583 0.01885" />
                         <site name="APL_l-P6" pos="0.0332244 0.00608975 0.00870125" />
+                        <site name="Barbell_grip_site_l" size="0.01" rgba="1 0 0 1" pos="0 -0.02 0" group="5" />
                       </body>
                     </body>
                   </body>

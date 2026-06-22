@@ -1,0 +1,129 @@
+<mujoco>
+    <body name="Barbell_smith" pos="-0.12 0 0.87">
+        <joint name="barbell_slide_z"
+                type="slide"
+                axis="0 0 1"
+                limited="true"
+                range="-0.20 0.15"
+                damping="8"
+                armature="0.05"/>
+
+
+        <!-- Central shaft: y from -0.655 m to +0.655 m -->
+        <geom name="barbell_center_shaft"
+            type="cylinder"
+            fromto="0 -0.655 0   0 0.655 0"
+            size="0.014"
+            rgba="0.75 0.75 0.78 1"
+            density="6361.0"
+            friction="1.0 0.01 0.001"
+            contype="1"
+            conaffinity="1"/>
+
+        <!-- Left sleeve: y from -1.100 m to -0.655 m -->
+        <geom name="barbell_left_sleeve"
+            type="cylinder"
+            fromto="0 -1.100 0   0 -0.655 0"
+            size="0.025"
+            rgba="0.75 0.75 0.78 1"
+            density="6361.0"
+            friction="1.0 0.01 0.001"
+            condim="3"/>
+
+        <!-- Right sleeve: y from +0.655 m to +1.100 m -->
+        <geom name="barbell_right_sleeve"
+            type="cylinder"
+            fromto="0 0.655 0   0 1.100 0"
+            size="0.025"
+            rgba="0.75 0.75 0.78 1"
+            density="6361.0"
+            friction="1.0 0.01 0.001"
+            condim="3"/>
+
+        <!-- Stop collars / shoulder rings near the sleeves -->
+        <geom name="barbell_left_stop_collar"
+            type="cylinder"
+            fromto="0 -0.670 0   0 -0.650 0"
+            size="0.035"
+            rgba="0.55 0.55 0.58 1"
+            density="6361.0"
+            contype="0"
+            conaffinity="0"/>
+
+        <geom name="barbell_right_stop_collar"
+            type="cylinder"
+            fromto="0 0.650 0   0 0.670 0"
+            size="0.035"
+            rgba="0.55 0.55 0.58 1"
+            density="6361.0"
+            contype="0"
+            conaffinity="0"/>
+
+        <!-- Optional dark grip / knurling visual zones, not used for mass -->
+        <geom name="barbell_left_grip_visual"
+            type="cylinder"
+            fromto="0 -0.520 0   0 -0.250 0"
+            size="0.0145"
+            rgba="0.05 0.05 0.05 1"
+            density="6361.0"
+            contype="0"
+            conaffinity="0"/>
+
+        <geom name="barbell_right_grip_visual"
+            type="cylinder"
+            fromto="0 0.250 0   0 0.520 0"
+            size="0.0145"
+            rgba="0.05 0.05 0.05 1"
+            density="6361.0"
+            contype="0"
+            conaffinity="0"/>
+
+        <geom name="barbell_center_knurl_visual"
+            type="cylinder"
+            fromto="0 -0.060 0   0 0.060 0"
+            size="0.0145"
+            rgba="0.05 0.05 0.05 1"
+            density="0"
+            contype="0"
+            conaffinity="0"/>
+
+        <!-- Left / negative-y weight plate V =0.0071569 m^3 -->
+        <geom name="barbell_left_plate"
+            type="cylinder"
+            fromto="0 -0.7225 0   0 -0.6775 0"
+            size="0.225"
+            rgba="0 0 1 1"
+            density="2830"
+            friction="1.0 0.01 0.001"
+            contype="1"
+            conaffinity="1"/>
+
+        <!-- Right / positive-y weight plate V =0.0071569 m^3 -->
+        <geom name="barbell_right_plate"
+            type="cylinder"
+            fromto="0 0.6775 0   0 0.7225 0"
+            size="0.225"
+            rgba="0 0 1 1"
+            density="2830"
+            friction="1.0 0.01 0.001"
+            contype="1"
+            conaffinity="1"/>
+
+        <!-- Useful sites for later hand constraints, tracking rewards, or contact debugging -->
+        <site name="Barbell_center_site"
+            pos="0 0 0"
+            size="0.025"
+            rgba="1 0 0 1"/>
+
+        <site name="Barbell_left_hand_site"
+            pos="0 0.42 0"
+            size="0.025"
+            rgba="0 0 1 1"/>
+
+        <site name="Barbell_right_hand_site"
+            pos="0 -0.42 0"
+            size="0.025"
+            rgba="0 0 1 1"/>
+
+    </body>
+</mujoco>

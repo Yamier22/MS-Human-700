@@ -1,0 +1,92 @@
+<mujoco>
+<!-- Simplified competition-style bench.
+
+  Coordinate convention:
+  - Bench long axis is x.
+  - Bench width axis is y.
+  - Bench pad top surface is at z = 0.43 m.
+  - Bench pad length = 1.25 m.
+  - Bench pad width  = 0.30 m.
+  - Bench pad thickness = 0.08 m.
+
+  MuJoCo box size uses half-dimensions:
+  - size x = 1.25 / 2 = 0.625
+  - size y = 0.30 / 2 = 0.15
+  - size z = 0.08 / 2 = 0.04
+
+  Pad center z:
+  - top height = 0.43
+  - center z = 0.43 - 0.04 = 0.39
+-->
+    <body name="bench" pos="0 0 0">
+        <geom name="bench_pad"
+                type="box"
+                pos="0 0 0.39"
+                size="0.625 0.15 0.04"
+                rgba="0.08 0.08 0.08 1"
+                friction="1.2 0.02 0.002"
+                solref="0.01 1"
+                solimp="0.9 0.95 0.001"
+                contype="1"
+                conaffinity="1"/>
+
+        <!-- Optional rigid board under the pad -->
+        <geom name="bench_board"
+                type="box"
+                pos="0 0 0.335"
+                size="0.58 0.13 0.015"
+                rgba="0.25 0.25 0.25 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <!-- Four simplified support legs -->
+        <geom name="bench_leg_front_left"
+                type="box"
+                pos="0.45 -0.10 0.165"
+                size="0.025 0.025 0.165"
+                rgba="0.45 0.45 0.45 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <geom name="bench_leg_front_right"
+                type="box"
+                pos="0.45 0.10 0.165"
+                size="0.025 0.025 0.165"
+                rgba="0.45 0.45 0.45 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <geom name="bench_leg_back_left"
+                type="box"
+                pos="-0.45 -0.10 0.165"
+                size="0.025 0.025 0.165"
+                rgba="0.45 0.45 0.45 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <geom name="bench_leg_back_right"
+                type="box"
+                pos="-0.45 0.10 0.165"
+                size="0.025 0.025 0.165"
+                rgba="0.45 0.45 0.45 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <!-- Optional base feet for visual stability -->
+        <geom name="bench_front_base"
+                type="box"
+                pos="0.45 0 0.025"
+                size="0.035 0.28 0.025"
+                rgba="0.35 0.35 0.35 1"
+                contype="0"
+                conaffinity="0"/>
+
+        <geom name="bench_back_base"
+                type="box"
+                pos="-0.45 0 0.025"
+                size="0.035 0.28 0.025"
+                rgba="0.35 0.35 0.35 1"
+                contype="0"
+                conaffinity="0"/>
+    </body>
+</mujoco>

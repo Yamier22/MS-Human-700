@@ -1,0 +1,15 @@
+<mujoco>
+    <equality>
+        <connect name="left_hand_bar_connect"
+             site1="Barbell_grip_site_l"
+             site2="Barbell_left_hand_site"
+             solref="0.02 1"
+             solimp="0.9 0.95 0.001"/>
+
+        <connect name="right_hand_bar_connect"
+             site1="Barbell_grip_site_r"
+             site2="Barbell_right_hand_site"
+             solref="0.02 1"
+             solimp="0.9 0.95 0.001"/>
+    </equality>
+</mujoco>
