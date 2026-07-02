@@ -69,11 +69,15 @@
       <include file="Body_Primary/Body_Leg_Foot_r.xml" />
       <include file="Body_Primary/Body_Leg_Foot_l.xml" />
       <include file="Body_Primary/Body_Torso_Simple.xml" />
-      <camera name="record_camera" pos="2 0.35 2" quat="0.920545 -0.0637322 0.384144 0.0311081" mode="track" />
       <light mode="trackcom" directional="false" pos="0 0 4.0" dir="0 0 -1" />
     </body>
     <include file="Body_machine/Barbell.xml" />
     <include file="Body_machine/Bench.xml" />
+    <camera name="camera_top" pos="0 0 3" euler="0 0 1.57" mode="track" />
+    <camera name="camera_side" pos="0 -3 0.5" euler="1.57 0 0" mode="track" />
+    <camera name="camera_front" pos="3 0 0.5" euler="1.57 1.57 0" mode="track" />
+    <camera name="camera" pos="1.8 -1.3 1.7" euler="0.785 0.785 0.785" mode="track" />
+    
   </worldbody>
 
   <include file="Asset/Asset_Lowerbody.xml" />
@@ -84,17 +88,19 @@
   <include file="Contact/Contact_Lowerbody.xml" />
 
   <include file="Equality/Equality_Lowerbody.xml" />
+  <include file="Equality/Equality_Lowerbody_Lock.xml" />
   <include file="Equality/Equality_Upperbody.xml" />
+  <include file="Equality/Equality_Torso_LB_Lock.xml" />
   <include file="Equality/Equality_Barbell.xml" />
 
-  <include file="Tendon/Tendon_Leg_r.xml" />
-  <include file="Tendon/Tendon_Leg_l.xml" />
+  <!-- <include file="Tendon/Tendon_Leg_r.xml" />
+  <include file="Tendon/Tendon_Leg_l.xml" /> -->
   <include file="Tendon/Tendon_Arm_r.xml" />
   <include file="Tendon/Tendon_Arm_l.xml" />
   <include file="Tendon/Tendon_Torso.xml" />
 
-  <include file="Muscle/Muscle_Leg_r.xml" />
-  <include file="Muscle/Muscle_Leg_l.xml" />
+  <!-- <include file="Muscle/Muscle_Leg_r.xml" />
+  <include file="Muscle/Muscle_Leg_l.xml" /> -->
   <include file="Muscle/Muscle_Arm_r.xml" />
   <include file="Muscle/Muscle_Arm_l.xml" />
   <include file="Muscle/Muscle_Torso.xml" />

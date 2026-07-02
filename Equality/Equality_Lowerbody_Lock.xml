@@ -1,0 +1,26 @@
+<mujoco>
+  <equality>
+    <joint name="lock_pelvis_tz" joint1="pelvis_tz" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_pelvis_ty" joint1="pelvis_ty" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_pelvis_tx" joint1="pelvis_tx" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <!-- <joint name="lock_pelvis_tilt" joint1="pelvis_tilt" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" /> -->
+    <joint name="lock_pelvis_list" joint1="pelvis_list" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_pelvis_rotation" joint1="pelvis_rotation" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+
+    <!-- <joint name="lock_hip_flexion_r" joint1="hip_flexion_r" polycoef="-0.3 0 0 0 0" solimp="0.9999 0.9999" /> -->
+    <joint name="lock_hip_adduction_r" joint1="hip_adduction_r" polycoef="-0.78 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_hip_rotation_r" joint1="hip_rotation_r" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_knee_angle_r" joint1="knee_angle_r" polycoef="1.27 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_ankle_angle_r" joint1="ankle_angle_r" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_subtalar_angle_r" joint1="subtalar_angle_r" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_mtp_angle_r" joint1="mtp_angle_r" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+
+    <!-- <joint name="lock_hip_flexion_l" joint1="hip_flexion_l" polycoef="-0.3 0 0 0 0" solimp="0.9999 0.9999" /> -->
+    <joint name="lock_hip_adduction_l" joint1="hip_adduction_l" polycoef="-0.78 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_hip_rotation_l" joint1="hip_rotation_l" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_knee_angle_l" joint1="knee_angle_l" polycoef="1.27 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_ankle_angle_l" joint1="ankle_angle_l" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_subtalar_angle_l" joint1="subtalar_angle_l" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_mtp_angle_l" joint1="mtp_angle_l" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+  </equality>
+</mujoco>

@@ -1,0 +1,7 @@
+<mujoco>
+  <equality>
+    <joint name="lock_L5_S1_LB" joint1="L5_S1_LB" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_T12_L1_LB" joint1="T12_L1_LB" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="lock_T1_head_neck_LB" joint1="T1_head_neck_LB" polycoef="0 0 0 0 0" solimp="0.9999 0.9999" />
+  </equality>
+</mujoco>
